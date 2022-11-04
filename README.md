@@ -5,3 +5,5 @@ Sovelluksen ideana on tekstin generoiminen teksidatasta esim. kirjasta hyödynt�
 
 ## Dokumentaatio
 [Vaatimusmäärittely](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/vaatimusm%C3%A4%C3%A4rittely.md)
+
+[Viikkoraportti 1](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/Viikkoraportti%201.md)
