@@ -1,5 +1,6 @@
 # Vaatimusmäärittely
-Tietorakenteet ja algoritmit harjoitustyö tutkintoa tietojenkäsittelytieteen kandidaatti (TKT) varten. 
+Tietorakenteet ja algoritmit harjoitustyö tutkintoa tietojenkäsittelytieteen kandidaatti (TKT) varten. Harjoitustyö
+luodaan Python ohjelmointi kielellä. Hallitsen myös Javan käytön. 
 
 ## Sovelluksen tarkoitus
 Sovelluksen tarkoituksena on mahdollistaa tekstin generointi tietystä datasta esimerkiksi kirjasta. Projektissa
