@@ -4,4 +4,4 @@ Sovelluksen ideana on tekstin generoiminen teksidatasta esim. kirjasta hyödynt�
 
 
 ## Dokumentaatio
-[Vaatimusmäärittely](https://github.com/lifeofborna/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/vaatimusm%C3%A4%C3%A4rittely.md)
