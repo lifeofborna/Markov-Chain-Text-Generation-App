@@ -2,6 +2,8 @@ from UI.ui import UserInterface
 
 
 def main():
-    UserInterface.start_ui()
+    ui = UserInterface()
+    ui.start_ui()
+
 
 main()

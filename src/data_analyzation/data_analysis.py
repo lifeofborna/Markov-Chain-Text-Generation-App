@@ -1,7 +1,7 @@
-#!/usr/bin/env python
 import os
 import nltk
 import re
+
 
 def read_from_file():
     words = []
@@ -17,17 +17,20 @@ def read_from_file():
     cleaned_words = clean_text_file(words)
 
     print(cleaned_words)
+    print(len(cleaned_words))
     return cleaned_words
 
 
 def clean_text_file(text):
     nltk.download('punkt')
     processed_text = []
-    #TODO lower all words --> remove all punctuations --> tokenize make states
+    # TODO lower all words --> remove all punctuations --> tokenize make states
     for row in text:
         row = row.lower()
-        row = re.sub(r'[^\w\s]','',row)
+        row = re.sub(r'[^\w\s]', '', row)
         states = nltk.word_tokenize(row)
         words = [word for word in states if word.isalpha()]
-        processed_text+=words
+        processed_text += words
+
     return processed_text
+

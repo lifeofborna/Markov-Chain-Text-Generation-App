@@ -1,38 +1,33 @@
 
 
-
 from data_analyzation import data_analysis
+
 
 class UserInterface:
     '''
     This class implements the functionality for user interface
     '''
+    def __init__(self):
+        pass
 
+    def start_ui(self):
 
-    def start_ui():
-        
         while True:
 
-            UserInterface.print_logo()
+            self.print_logo()
 
             print("Welcome to game of thrones text generation app! ")
             print("")
-            s = int(input("Type: '1' for starting the application, '0' for exiting: "))
-            
-            ##TODO create data_analysis
-            if s == 0:
+            user_input = int(
+                input("Type: '1' for starting the application, '0' for exiting: "))
+
+            if user_input == 0:
                 break
-            elif s == 1:
+            elif user_input == 1:
                 text = data_analysis.read_from_file()
-            #    clean_text = data_analysis.clean_text_file(text)
                 break
 
-
-          
-    
-
-
-    def print_logo():
+    def print_logo(self):
         print("""
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⣀⠀⠀⠀⠀⠙⣟⡓⠲⠶⠤⠤⠶⠒⠛⠙⢓⣲⣦⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -57,4 +52,4 @@ class UserInterface:
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⠀⡼⠁⠈⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣴⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀        
-        """ )
+        """)
