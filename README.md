@@ -2,6 +2,7 @@
 
 Sovelluksen ideana on tekstin generoiminen teksidatasta esim. kirjasta hyödyntämällä markovin ketjua ja trie-tietorakennetta. 
 
+Testikattavuus: ![GHA workflow badge](https://github.com/lifeofborna/Tiralabra/workflows/CI/badge.svg)
 
 ## Dokumentaatio
 [Vaatimusmäärittely](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/vaatimusm%C3%A4%C3%A4rittely.md)
@@ -15,7 +16,6 @@ Sovelluksen ideana on tekstin generoiminen teksidatasta esim. kirjasta hyödynt�
 
 2. Sovelluksen käynnistäminen tapahtuu seuraavasti:
 >**poetry run invoke start**
-
 
 ## Komentorivitoiminnot
 
