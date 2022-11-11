@@ -9,6 +9,8 @@ Testikattavuus: ![GHA workflow badge](https://github.com/lifeofborna/Tiralabra/w
 
 [Viikkoraportti 1](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/Viikkoraportti%201.md)
 
+[Viikkoraportti 2](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/viikkoraportti2.md)
+
 ## Asennus
 
 1. Tarvittavien riippuvuuksien asentaminen:
