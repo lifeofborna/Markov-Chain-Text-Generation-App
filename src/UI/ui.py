@@ -1,7 +1,7 @@
 
 
 from data_analyzation import data_analysis
-
+from markovchain import markov
 
 class UserInterface:
     '''
@@ -25,6 +25,7 @@ class UserInterface:
                 break
             elif user_input == 1:
                 text = data_analysis.read_from_file()
+                markov.construct_markov_model(text,2,10)
                 break
 
     def print_logo(self):
