@@ -11,6 +11,11 @@ Testikattavuus: ![GHA workflow badge](https://github.com/lifeofborna/Tiralabra/w
 
 [Viikkoraportti 2](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/viikkoraportti2.md)
 
+[Viikkoraportti 3](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/viikkoraportti3.md)
+
+[Testaus dokumentaatio](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/testausdokumentaatio.md
+)
+
 ## Asennus
 
 1. Tarvittavien riippuvuuksien asentaminen:
