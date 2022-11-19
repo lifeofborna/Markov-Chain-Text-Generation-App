@@ -6,3 +6,4 @@ Tällä hetkellä testejä on vain luotu data analyysia varten. Varmistetaan, et
 
 ## Testauskattavuus
 Kattaa tällä hetkellä vain data analysis folderin. 
+![Kuva](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/kuvat/coverage_data.png)
