@@ -16,7 +16,6 @@ def read_from_file():
 
     cleaned_words = clean_text_file(words)
 
-  #   print(len(cleaned_words))
     return cleaned_words
 
 

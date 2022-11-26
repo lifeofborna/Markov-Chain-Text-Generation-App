@@ -1,21 +1,22 @@
 from trie import trie
+import random
 
-#TODO add gen random text function
 
-def construct_markov_model(txt,ngram=3,limit=10):
+def construct_markov_model(txt,ngram,start,limit):
+
     get_graph = create_graph_with_ngram(txt,ngram)
     model = get_graph_transition_probabilites(get_graph)
-    # gen_text = generate_text(model, limit, )
-    #for state,succ in model.items():
-     #   print(f'------------------------{state}---------------------------------------')
-     #   print(model[state])
+    
+    for i in range(20):
+        print(str(i)+ ". ", generate_text(model,start=start, limit=8))
+ 
 
 
 
 def create_graph_with_ngram(txt, ngram = 1):
     trie_tree = trie.Trie()
     i = 0
-
+    
     # Loop through words, create ngram size states, add to trie
     while i < (len(txt)-ngram-1):
         current_state = ""
@@ -25,7 +26,6 @@ def create_graph_with_ngram(txt, ngram = 1):
             succ_state += txt[i+j+ngram] + " "
         i+=1
 
-      #  tree.add_to_trie(current_state[:-1],succ_state[:-1])
         trie_tree.insert(current_state, succ_state)
     
     final = trie_tree.search()
@@ -37,10 +37,22 @@ def get_graph_transition_probabilites(graph):
         total_prob = sum(succ_state.values())
         #update the prob
         for key,value in succ_state.items():
-          #s  print(f'{value} / {total_prob}')
             graph[state][key] = value/total_prob
         
     return graph
 
 
-#def generate_text(model, limit, )
+def generate_text(model, limit=8, start="we shall " ):
+    current_state = start
+    succ_state = None
+    text = ""
+    text+=current_state+" "
+
+    for x in range(limit):
+        succ_state = random.choices(list(model[current_state].keys()),
+                     list(model[current_state].values()))
+
+        current_state = succ_state[0]
+        text+=current_state+" "
+
+    return text

@@ -18,6 +18,7 @@ class Trie:
         if curr_state not in node.children.keys():
             new_node = TrieNode(curr_state)
             node.children[curr_state] = {}
+            node.children[curr_state][next_state] = 1
             new_node.children[next_state] = 1
         else:
             node = node.children[curr_state]
