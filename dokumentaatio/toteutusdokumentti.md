@@ -6,8 +6,10 @@
  Ja Trie vastaa sovelluksen tietorakenteena. 
  
  ## Saavutetut aika- ja tilavaativuudet (m.m. O-analyysit pseudokoodista)
-  - TBD
+  - Tietorakenteen, trie-tietorakenne, jonka aikavaativuus on O(W*L) missä W sanojen määrä ja L sanojen keskimääräinen pituus.
+
  ## Työn mahdolliset puutteet ja parannusehdotukset
-  - TBD
+  - Aikavaativuutta voisi parantaa kun lasketaan todennäköisyydet siirtymille. 
  ## Lähteet
-  - TBD
+  - dataset: https://www.kaggle.com/datasets/muhammedfathi/game-of-thrones-book-files
+  - ascii art: https://emojicombos.com/game-of-thrones-ascii-art
