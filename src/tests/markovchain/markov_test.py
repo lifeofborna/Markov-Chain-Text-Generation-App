@@ -30,4 +30,4 @@ class TestMarkovChain(unittest.TestCase):
         
         sys.stdout = sys.__stdout__ 
 
-        self.assertEqual(210,len(capturedOutput.getvalue()))
+        self.assertEqual(211,len(capturedOutput.getvalue()))
