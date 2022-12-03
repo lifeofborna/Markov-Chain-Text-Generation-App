@@ -27,52 +27,24 @@ class UserInterface:
 
             if user_input == 0:
                 break
+
             elif user_input == 1:
-                default = input("Do you wish to select default values for generating text?: yes/no: ")
-                if default == "yes":
-                    default_value = random.choice(self.default_values)
-                    print("----------------------------------------------------------")
-                    print(f"Default value has been set to '{default_value}', ngram=2 ")
-                    print("----------------------------------------------------------")
+                try:
+                    default = int(input("Please select the ngram size recommended (2-5): "))
+                    limit = int(input("Please select how many words would you wish to be generated recommended (12-16): "))
                     print("")
-                    text = data_analysis.read_from_file()
-                    markov.construct_markov_model(text,ngram=2,start=default_value,limit=8)
-
-                else:
-                    self.create_text()
-                    continue
+                    print("-----------------------------------------------------")
+                    print("Dataset consists of 700 000 words! Loading...")
+                    print("--------------------------------------------------")
+                    print("")
+                except ValueError:
+                    "Please use a valid input!"
                 
+                text = data_analysis.read_from_file()
+                markov.construct_markov_model(text,default,limit)
+                print("-----------------------------------------------")
 
 
-    def create_text(self):
-        while True:
-            try:
-                ngram = int(input("Please select the ngram size 1-5 (2 preferred): "))
-                start = input("Please select the starting state based on the ngram size. For example: If you chose 2: 'this time' would be valid: ")
-                start +=" "
-                
-            except ValueError:
-                print("Please select a integer value! for the ngram! ")
-                continue
-
-            if ngram < 0 or ngram >5:
-                print("Please select a ngram from 1-5")
-                continue
-            
-            words = start.split()
-            if len(words) != ngram:
-                print("The word count of the start input should be same as ngram!")
-                continue
-            
-            text = data_analysis.read_from_file()
-
-            try:
-                markov.construct_markov_model(text,ngram,start,8)
-            except:
-                print("Please try a different start input!")
-
-            return
-            
 
     def print_logo(self):
         print("""

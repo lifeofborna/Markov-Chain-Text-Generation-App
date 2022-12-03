@@ -4,6 +4,9 @@ import re
 
 
 def read_from_file():
+    '''
+    Reads data from file
+    '''
     words = []
     dirname = os.path.dirname(__file__)
     data_file_path = os.path.join(dirname, "got1.txt")
@@ -16,10 +19,14 @@ def read_from_file():
 
     cleaned_words = clean_text_file(words)
 
+    #745 535 sanamäärä
     return cleaned_words
 
 
 def clean_text_file(text):
+    '''
+    Processes data and cleans it. Returns the processed text.
+    '''
     nltk.download('punkt')
     processed_text = []
     # TODO lower all words --> remove all punctuations --> tokenize make states

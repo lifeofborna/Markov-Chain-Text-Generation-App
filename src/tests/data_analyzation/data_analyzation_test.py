@@ -19,7 +19,7 @@ class TestDataAnalyzis(unittest.TestCase):
         self.assertAlmostEqual(nums in clean_data, False)
 
     def test_right_amout_of_words(self):
-        correct_ans = 323936
+        correct_ans = 745535
         words = data_analysis.read_from_file()
         ans = len(words)
 
