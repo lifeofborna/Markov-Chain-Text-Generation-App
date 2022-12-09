@@ -17,6 +17,8 @@ Testikattavuus: ![GHA workflow badge](https://github.com/lifeofborna/Tiralabra/w
 
 [Viikkoraportti 5](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/viikkoraportti5.md)
 
+[Viikkoraportti 6](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/viikkoraportti6.md)
+
 [Toteutus dokumentaatio](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/toteutusdokumentti.md
 )
 
