@@ -7,6 +7,15 @@ Testikattavuus: ![GHA workflow badge](https://github.com/lifeofborna/Tiralabra/w
 ## Dokumentaatio
 [Vaatimusmäärittely](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/vaatimusm%C3%A4%C3%A4rittely.md)
 
+[Toteutus dokumentaatio](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/toteutusdokumentti.md
+)
+
+[Testaus dokumentaatio](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/testausdokumentaatio.md
+)
+
+[Käyttöohje](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/k%C3%A4ytt%C3%B6ohje.md)
+
+## Viikkoraportit
 [Viikkoraportti 1](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/Viikkoraportti%201.md)
 
 [Viikkoraportti 2](https://github.com/lifeofborna/Tiralabra/blob/main/dokumentaatio/viikkoraportti2.md)
@@ -19,8 +28,3 @@ Testikattavuus: ![GHA workflow badge](https://github.com/lifeofborna/Tiralabra/w
 
 [Viikkoraportti 6](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/viikkoraportti6.md)
 
-[Toteutus dokumentaatio](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/toteutusdokumentti.md
-)
-
-[Testaus dokumentaatio](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/testausdokumentaatio.md
-)
