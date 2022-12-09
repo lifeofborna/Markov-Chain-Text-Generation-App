@@ -24,27 +24,3 @@ Testikattavuus: ![GHA workflow badge](https://github.com/lifeofborna/Tiralabra/w
 
 [Testaus dokumentaatio](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/testausdokumentaatio.md
 )
-
-## Asennus
-
-1. Tarvittavien riippuvuuksien asentaminen:
->**poetry install**
-
-2. Sovelluksen käynnistäminen tapahtuu seuraavasti:
->**poetry run invoke start**
-
-## Komentorivitoiminnot
-
-### Sovelluksen käynnistys:
->**poetry run invoke start**
-
-### Sovelluksen testien suoritus
->**poetry run invoke test**
-
-### Testikattavuuden suoritus
-> **poetry run invoke coverage-report** 
-> 
-Raportti löytyy htmlcov hakemistosta.
-
-### Pylint tarkistukset suoritetaan:
-> **poetry run invoke lint**
