@@ -9,4 +9,4 @@ sovellus luo tekstiä oikealla lähtökohdalla.
 
 ## Testauskattavuus
 Kattaa tällä hetkellä kaikki olennaiset luokat sovelluksessa. 
-![Kuva](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/kuvat/coveragerep.png)
+![Kuva](https://github.com/lifeofborna/Markov-Chain-Text-Generation-App/blob/main/dokumentaatio/kuvat/testikat.png)
