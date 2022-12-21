@@ -1,50 +1,41 @@
-
-
 from data_analyzation import data_analysis
 from markovchain import markov
-import random 
+
 class UserInterface:
     '''
     This class implements the functionality for user interface
     '''
-    def __init__(self):
-        self.default_values = ['eddard stark ','lord commander ','your grace ','lord of ', 'there were ', 'your brother ','those who ', 'a girl ','the starks ', 'lord commander ', 'this time ']
 
     def start_ui(self):
-
         self.print_logo()
-
         print("Welcome to game of thrones text generation app! ")
-        print("")
 
         while True:
             print("")
-            try:
-                user_input = int(input("Type 1 to generate text, or 0 to exit: "))
-            except:
-                print("Please use a valid input!")
-                continue
+            user_input = input("Type 1 to generate text, or 0 to exit: ")
 
-            if user_input == 0:
+            if user_input == "0":
                 break
-
-            elif user_input == 1:
+            elif user_input == "1":
                 try:
                     default = int(input("Please select the ngram size recommended (2-5): "))
-                    limit = int(input("Please select how many words would you wish to be generated recommended (12-16): "))
+                    limit = int(input("How many words should be generated? rec. (12-16): "))
+                    word = input("Enter a starting word. To use default values press enter. ")
                     print("")
                     print("-----------------------------------------------------")
                     print("Dataset consists of 700 000 words! Loading...")
                     print("--------------------------------------------------")
                     print("")
                 except ValueError:
-                    "Please use a valid input!"
+                    print("Please use a valid input!")
+                    continue
                 
                 text = data_analysis.read_from_file()
-                markov.construct_markov_model(text,default,limit)
+                limit += default
+                markov.construct_markov_model(text, default, limit, word)
                 print("-----------------------------------------------")
-
-
+            else:
+                print("Please use a valid input!")
 
     def print_logo(self):
         print("""

@@ -32,30 +32,3 @@ class Trie:
                 node.counter+=1
 
         node.is_end = True
-
-
-    def calculate_probabilities(self):
-        
-    # This function calculates the probabilities of each node in a trie
-    # by using the TrieNode class counter attribute.
-
-        def calculate_node_probabilities(node, total_prob):
-            # Calculate the probabilities of each child node.
-            for child in node.children.values():
-                child.counter = child.counter / total_prob
-                calculate_node_probabilities(child, total_prob)
-
-
-        # Check if the trie is empty or has no children.
-        if not self.root or not self.root.children:
-            return
-
-        # Calculate the total probability of the root node's children.
-        total_prob = 0
-        for child in self.root.children.values():
-            total_prob += child.counter
-
-        # Calculate the probabilities of each child node.
-        for child in self.root.children.values():
-            child.counter = child.counter / total_prob
-            calculate_node_probabilities(child, total_prob)

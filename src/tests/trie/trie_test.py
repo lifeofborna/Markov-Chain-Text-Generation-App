@@ -33,24 +33,3 @@ class TestTrieTree(unittest.TestCase):
 
 
         self.assertEqual(1,self.trie.root.children['hello'].counter)
-
-    def test_check_if_correct_probabilities(self):
-        words = ["hello","how","are"]
-        words2 = ["this","hello","is"]
-        words3 = ['hello']
-        self.trie.insert(words)
-        self.trie.insert(words2)
-        self.trie.insert(words3)
-
-        self.trie.calculate_probabilities()
-        self.assertEqual(0.6666666666666666,self.trie.root.children['hello'].counter)
-
-        self.trie.insert(words3)
-
-        self.trie.calculate_probabilities()
-        self.assertEqual(0.8333333333333334,self.trie.root.children['hello'].counter)
-
-        self.trie.insert(["I"])
-
-        self.trie.calculate_probabilities()
-        self.assertEqual(0.4166666666666667,self.trie.root.children['hello'].counter)
